@@ -1,6 +1,7 @@
 <template>
   <div>
-    <ExploreCategory/>
+    <ExploreCategory name="usman"/>
+    <FooBarButton/>
     <!-- <nuxt-link
         :to="{
           name: 'collections-electronic-id',
