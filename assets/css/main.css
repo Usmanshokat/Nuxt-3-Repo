@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* creatodisplay */
+@layer base {
+    @font-face {
+        font-family: 'creato_displayblack';
+        src: url('../fonts/creatodisplay-black-webfont.woff') format('woff'),
+             url('../fonts/creatodisplay-black-webfont.woff2') format('woff2');            
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'creato_displaybold';
+        src: url('../fonts/creatodisplay-bold-webfont.woff2') format('woff2'),
+            url('../fonts/creatodisplay-bold-webfont.woff') format('woff');        
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'creato_displayextrabold';
+        src: url('../fonts/creatodisplay-extrabold-webfont.woff2') format('woff2'),
+            url('../fonts/creatodisplay-extrabold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'creato_displaylight';
+        src: url('../fonts/creatodisplay-light-webfont.woff2') format('woff2'),
+            url('../fonts/creatodisplay-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'creato_displaymedium';
+        src: url('../fonts/creatodisplay-medium-webfont.woff2') format('woff2'),
+            url('../fonts/creatodisplay-medium-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'creato_displayregular';
+        src: url('../fonts/creatodisplay-regular-webfont.woff2') format('woff2'),
+            url('../fonts/creatodisplay-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+    @font-face {
+        font-family: 'creato_displaythin';
+        src: url('../fonts/creatodisplay-thin-webfont.woff2') format('woff2'),
+            url('../fonts/creatodisplay-thin-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+}
