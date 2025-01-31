@@ -26,7 +26,16 @@ export default defineNuxtConfig({
     "assets": "/assets/css",
     "image": "/assets/img"
   },
- 
+  modules:[
+    "@pinia/nuxt"
+  ],
+  pinia: {
+    storesDirs: ["./stores/**"],
+  },
+  
+  // pinia:{
+  //   stores:['/stores**']
+  // },
   runtimeConfig:{
     secretKey : 'VUpDFpH2oNabJR2xeaHIiAphXrQVo8c5',
     public:{

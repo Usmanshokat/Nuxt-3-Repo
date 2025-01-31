@@ -60,6 +60,10 @@
 </template>
 <script setup>
 import { ref , onMounted , reactive , computed , watch , nextTick } from 'vue';
+import {useConfigureStore} from './stores/configureStore'
+const store = useConfigureStore();
+store.storeDetial({name:'usman'})
+
 // handle props
 // const props_name = defineProps(['name']);
 // V-modal
