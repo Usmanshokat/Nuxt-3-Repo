@@ -48,11 +48,14 @@
         </section>
     </div>
 </template>
-<script>
-export default {    
-    name:'TopHeader',
-    setup() {    
-        
-    },
-}
+<script setup>
+import {onMounted} from 'vue'
+import {useConfigureStore} from './stores/configureStore'
+const getConfigureStore =  useConfigureStore();
+const {configureStoreData , configurePending} =  storeToRefs(getConfigureStore);
+onMounted(()=>{
+    console.log(configureStoreData , 'check data here configuresfdsfdf')
+    console.log(configurePending , 'store pending')
+})
+
 </script>

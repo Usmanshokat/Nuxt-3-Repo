@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ExploreCategory name="usman"/>
+    <ExploreCategory/>
     <FooBarButton/>
     <!-- <nuxt-link
         :to="{

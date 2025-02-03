@@ -1,5 +1,12 @@
-export const useFetchData = async (url , option)=>{    
-    return await useFetch(url , option);
+export const useFetchData = async (url , option)=>{  
+    const config = useRuntimeConfig();    
+    const base_url = config.public.base_url;
+    let defaults={
+        base_url,        
+    }
+    
+
+    return await $fetch(url , option);
     // return {data , error}
     // const data = ref(null);
     // const error = ref(null);

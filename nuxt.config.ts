@@ -32,7 +32,6 @@ export default defineNuxtConfig({
   pinia: {
     storesDirs: ["./stores/**"],
   },
-  
   // pinia:{
   //   stores:['/stores**']
   // },
@@ -40,6 +39,7 @@ export default defineNuxtConfig({
     secretKey : 'VUpDFpH2oNabJR2xeaHIiAphXrQVo8c5',
     public:{
       // 'apiBase' : process.env.MY_ENV_VARIABLE,
+      base_url : process.env.BASE_URL,
       server_url: process.env.BASE_URL,
       store_id: process.env.STORE_ID,
       blogs_imgs_url: process.env.BUCKET_BASE_URL && process.env.STORE_ID ? `${process.env.BUCKET_BASE_URL}${process.env?.STORE_ID}/blog/`: '',      
